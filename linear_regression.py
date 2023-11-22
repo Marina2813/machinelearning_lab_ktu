@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error
 
-df = pd.read_csv("C:/Users/marin/OneDrive/Desktop/machine_learning/student_scores.csv")
+df = pd.read_csv("machine_learning/student_scores.csv")
 df_binary= df[['Hours','Scores']]
 print(df_binary.head())
 
