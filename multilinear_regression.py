@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_squared_error
 
 #reading dataset from a csv file
-df = pd.read_csv("C:/Users/marin/OneDrive/Desktop/machine_learning/dataset2.csv")
+df = pd.read_csv("machine_learning/dataset2.csv")
 
 # selecting independent variables(x) and dependent variable(y)
 x = df[["SqFt","Bedrooms"]]
