@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error
 
-df = pd.read_csv("machine_learning/student_scores.csv")
+df = pd.read_csv("C:/Users/marin/OneDrive/Desktop/machine_learning/student_scores.csv")
 df_binary= df[['Hours','Scores']]
 print(df_binary.head())
 
@@ -22,6 +22,11 @@ print(y_pred[1:5])
 print(f'intercept ={R.intercept_}')
 print(f'coeff ={R.coef_}')
 print(f'Error = {mean_squared_error(y,y_pred)}')
+
+new_data = {'Hours':[2.1]}
+df_new = pd.DataFrame(new_data)
+new_pred = R.predict(df_new["Hours"].values.reshape(-1,1))
+print(new_pred)
 
 plt.plot(x,y_pred,color="green")
 plt.scatter(x,y)
