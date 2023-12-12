@@ -4,8 +4,8 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import LabelEncoder
 
-#replace datasets.csv with actual file path
-iris = pd.read_csv("C:/Users/marin/OneDrive/Desktop/machine_learning/iris.csv")
+#replace "/machine_learning/iris.csv" with your actual file path
+iris = pd.read_csv("/machine_learning/iris.csv")
 
 #seperate feature x and target variable y
 x = iris[['sepal_length','sepal_width','petal_length','petal_width']]

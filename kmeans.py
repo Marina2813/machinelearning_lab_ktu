@@ -6,7 +6,7 @@ from sklearn.metrics import adjusted_rand_score
 from sklearn.preprocessing import LabelEncoder
 
 #load the iris dataset
-iris = pd.read_csv("C:/Users/marin/OneDrive/Desktop/machine_learning/iris.csv")
+iris = pd.read_csv("/machine_learning/iris.csv")
 x = iris[['sepal_length','sepal_width','petal_length','petal_width']]
 y_label = iris['species']
 
